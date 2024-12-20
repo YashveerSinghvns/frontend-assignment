@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./Pagination.css";
 import "./App.css";
 
 
-const Pagination = ({ totalPages, currentPage, onPageChange }) => {
+export default function Pagination ({ totalPages, currentPage, onPageChange }) {
   let pageNumbers = [];
 
   if(currentPage < 3) {
@@ -84,11 +83,3 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
     </div>
   );
 };
-
-Pagination.propTypes = {
-  totalPages: PropTypes.number.isRequired,
-  currentPage: PropTypes.number.isRequired,
-  onPageChange: PropTypes.func.isRequired,
-};
-
-export default Pagination;

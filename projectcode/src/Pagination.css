@@ -22,6 +22,12 @@
   .pagination-list button:hover {
     background-color: #0056b3;
   }
+
+  .pagination-list button:focus-visible {
+    outline: 2px solid black !important; /* Add custom focus outline */
+    outline-offset: 2px; /* Add space between the button and the outline */
+  }
+
   .pagination-list button:disabled {
     background: #d6d6d6;
     cursor: not-allowed;
