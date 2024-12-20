@@ -1,0 +1,80 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+.projects-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.projects-table th,
+.projects-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.projects-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.projects-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.projects-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+}
+
+.pagination-list li {
+  margin: 0 0;
+}
+
+.pagination-list button {
+  height: 35px;
+  border: none;
+  background: #f9f9f9;
+  color: black;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.pagination-list li .previous {
+  border-radius: 5px 0 0 5px;
+}
+
+.pagination-list li .next {
+  border-radius: 0 5px 5px 0;
+}
+
+.pagination-list button:hover {
+  background: #bec0c0;
+}
+
+.pagination-list .active button {
+  background: rgb(237, 235, 235);
+  border: 1px solid #747676;
+}
+
+.pagination-list button:disabled {
+  background: #f9f9f9;
+  color: #747676;
+  cursor: auto;
+}
